@@ -19,7 +19,7 @@ const forms = () => {
         document.querySelector('.status').textContent = message.loading;
         let result = await fetch(url, {
             method: 'POST',
-            body: data
+            body: data 
         });
 
         return await result.text();
